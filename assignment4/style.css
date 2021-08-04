@@ -1,0 +1,165 @@
+
+/* --gunmetal: #10222Cff;
+--sacramento-state-green: #003A2B;
+--spanish-viridian: #038051;
+--liver-chestnut: #947A5F;
+--dark-slate-gray: #2D4545; */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    width: 100%;
+    background-color: #10222C;
+    color: seashell;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+li {
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+}
+li a{
+    color: seashell;
+    text-decoration: none;
+}
+@media screen and (max-width: 460px)
+{
+    nav, ul{
+        flex-direction: column;
+        align-content: center;
+    } 
+    ul{
+        margin: 0.4rem;
+    }
+}
+
+/*------------- image-slider css----------------- */
+
+.image-slider{
+    width: 93vw;
+    /* border: 2px solid #ccc; */
+    margin: 1.2rem auto;
+    height: 70vh;
+    box-shadow: 1rem 1rem 1.2rem rgb(163, 163, 163);
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/first-nav.jpg");
+    animation: imageSlider infinite ease-in-out;
+    animation-delay: 1s;
+    animation-duration: 8s ;
+}
+@keyframes imageSlider {
+    20%{
+        background-image: url("./images/nav-2.jpg");
+    }
+    40%{
+        background-image: url("./images/nav-3.jpg");
+    }
+    60%{
+        background-image: url("./images/nav-4.jpg");
+    }
+    80%{
+        background-image: url("./images/nav-5.jpg");
+    }
+}
+/* ---------------- hr ------------- */
+
+hr{
+    border: 0;
+    height: 1.2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* ----------- blog-cards css---------- */
+
+.blog{
+    width: 93vw;
+    text-align: center;
+    margin: 1rem auto;
+    /* border: 1px solid #ccc; */
+    font-size: 2rem;
+    font-weight: 300;
+    color: #003A2B;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width: 260px;
+    height: 300px;
+    border: 2px solid #ccc;
+    margin: 1rem auto;
+    transition: 80ms;
+    box-shadow: 1px 1px 10px rgb(172, 172, 172);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(20%);
+}
+.card p{
+    color: seashell;
+    font-weight: 400;
+}
+.card a {
+    color: seashell;
+    text-decoration: none;
+    font-size: 0.98rem;
+    border: 1px solid seashell;
+    /* border-radius: 5px; */
+    padding: 8px 10px;
+    background-color: rgba(7, 7, 7, 0.411);
+}
+.card:hover{
+    transform: scale(1.1);
+    filter: contrast(120%);
+}
+.card:hover p{
+    
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
+.card:nth-of-type(1){
+    background-image: url("https://images.unsplash.com/photo-1575713445721-edbd42ed2a4a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8amFpcHVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+}
+.card:nth-of-type(2){
+    background-image: url("https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG11bWJhaXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+}
+.card:nth-of-type(3){
+    background-image: url("https://images.unsplash.com/photo-1609920658906-8223bd289001?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFuYWxpfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+}
+.card:nth-of-type(4){
+    background-image: url("https://images.unsplash.com/photo-1549817997-f6958ecf47b9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGFyamVlbGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+}
+ /*----------------- footer -------------- */
+footer {
+    background-color: #2D4545;
+    color: seashell;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+footer h4{
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+footer p{
+    font-size: 1.1rem;
+}
+footer ul{
+    margin: 1.3rem auto;
+}
+.fa:hover{
+    transform: scale(1.2);
+}
