@@ -1,0 +1,90 @@
+.disable{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* color: #fca311; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: rgb(251,41,219);
+    background: linear-gradient(90deg, rgba(251,41,219,0.8) 15%, rgba(83,110,255,0.9) 48%, rgba(118,46,178,0.9) 82%);
+}
+hr {
+    border: 0;
+    height: 0.1rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.container {
+    /* Glassmorphism card effect */
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    /* styling the container  */
+    margin: 2.5rem auto;
+    width: 82%;
+    /* text-align: center; */
+    padding: 1rem;
+    color: rgb(25, 0, 94);
+}
+.heading{
+    /* border: 2px solid black; */
+
+    padding-top: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    color: rgb(25, 0, 94);
+    font-size: 1.3rem;
+}
+h1{
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+}
+input{
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    padding: 0.5%;
+    width: 100%;
+    border: 1px solid rgba(166, 170, 175, 0.3);
+    color: rgb(25, 0, 94);
+}
+li{
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 0.4rem;
+    width: 80%;
+    margin: 0.4rem auto;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+}
+li input{
+    width: 50%;
+    padding: 0rem;
+    font-size: 0.8rem;
+    margin-top: -0.2em;
+    font-size: 1rem;
+}
+button{
+    /* float: right; */
+    margin: -0.2rem;
+    border: 0px solid #ccc;
+    padding: 0.2rem 0.5rem;
+    margin-left: 0.4rem;
+    font-size: 0.9rem;
+    border-radius: 0.2rem;
+    float: right;
+}
+.fa-trash{
+    color: rgb(255, 79, 79);
+}
+.fa-pen{
+    color: rgb(0, 102, 39);
+}
+.fa-arrow-up{
+    color: rgb(25, 0, 94);;
+}
+.fa-arrow-down{
+    color: rgb(25, 0, 94);;
+}
