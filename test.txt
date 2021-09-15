@@ -1,2 +1,3 @@
 test document
 https://khushi-ahuja.github.io/college-assignment/ToDoList/index.html  ->  for todo list
+https://khushi-ahuja.github.io/college-assignment/Calculator/index.html  -> for calculator
